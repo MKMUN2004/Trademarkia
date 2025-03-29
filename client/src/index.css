@@ -1,0 +1,82 @@
+/* Add Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Skeleton loading animation */
+.skeleton {
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary;
+}
+
+.btn-link {
+  @apply text-primary hover:text-blue-700 text-sm font-medium focus:outline-none;
+}
+
+/* Custom form styles */
+.form-input {
+  @apply mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary sm:text-sm;
+}
+
+.form-select {
+  @apply mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md;
+}
+
+.form-checkbox {
+  @apply h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700;
+}
+
+/* Custom cards and sections */
+.section-card {
+  @apply bg-white shadow overflow-hidden sm:rounded-lg;
+}
+
+.section-header {
+  @apply px-4 py-5 sm:px-6;
+}
+
+.section-body {
+  @apply border-t border-gray-200 px-4 py-5 sm:p-6;
+}
+
+.section-footer {
+  @apply px-4 py-4 sm:px-6;
+}
+
+/* Responsive utilities */
+.responsive-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3;
+}
