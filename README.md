@@ -1,5 +1,5 @@
 
-# Modern Web Application
+# Trademarkia Frontend Intern Task Application
 
 A full-stack web application built with React, Express, and TypeScript, featuring a modern UI with Tailwind CSS and Shadcn components.
 
